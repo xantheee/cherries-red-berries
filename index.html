@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cherries red berries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>welcome to my website!</h1>
+  </header>
+  <nav>
+    <a href="index.html">home</a>
+    <a href="about.html">about me</a>
+    <a href="gallery.html">gallery</a>
+    <a href="contact.html">contact</a>
+  </nav>
+  
+
+  <section id="gif-player-xanthe">
+    <div id="gif-container-xanthe" style="display: none;">
+      <img src="meadow.gif" alt="A fun animation">
+    </div>
+    <audio id="song-xanthe" src="halah.mp3"></audio>
+    <button id="play-button-xanthe">play a tune for xanthe</button>
+  </section>
+  
+  <img src="photo11.jpeg" alt="bunny!">
+
+  <section id="gif-player-jack">
+    <div id="gif-container-jack" style="display: none;">
+      <img src="sillyseal.gif" alt="A fun animation">
+    </div>
+    <audio id="song-jack" src="julio.mp4"></audio>
+    <button id="play-button-jack">play a tune for jack</button>
+  </section>
+  
+  <img src="seal.jpeg" alt="bunny!">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Xanthe's player functionality
+      const playButtonXanthe = document.getElementById('play-button-xanthe');
+      const gifContainerXanthe = document.getElementById('gif-container-xanthe');
+      const audioXanthe = document.getElementById('song-xanthe');
+  
+      playButtonXanthe.addEventListener('click', () => {
+        if (audioXanthe.paused) {
+          // Play the song
+          audioXanthe.play();
+  
+          // Show the GIF
+          gifContainerXanthe.style.display = 'block';
+  
+          // Change button text to "Stop"
+          playButtonXanthe.textContent = 'thank you!';
+        } else {
+          // Pause the song
+          audioXanthe.pause();
+          audioXanthe.currentTime = 0;
+  
+          // Hide the GIF
+          gifContainerXanthe.style.display = 'none';
+  
+          // Change button text back to "Play"
+          playButtonXanthe.textContent = 'play a tune for xanthe';
+        }
+      });
+  
+      // Jack's player functionality
+      const playButtonJack = document.getElementById('play-button-jack');
+      const gifContainerJack = document.getElementById('gif-container-jack');
+      const audioJack = document.getElementById('song-jack');
+  
+      playButtonJack.addEventListener('click', () => {
+        if (audioJack.paused) {
+          // Play the song
+          audioJack.play();
+  
+          // Show the GIF
+          gifContainerJack.style.display = 'block';
+  
+          // Change button text to "Stop"
+          playButtonJack.textContent = 'thank you!';
+        } else {
+          // Pause the song
+          audioJack.pause();
+          audioJack.currentTime = 0;
+  
+          // Hide the GIF
+          gifContainerJack.style.display = 'none';
+  
+          // Change button text back to "Play"
+          playButtonJack.textContent = 'play a tune for jack';
+        }
+      });
+    });
+  </script>
+  

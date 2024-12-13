@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0b5fd;
+    color: #b855a9;
+  }
+  
+  header {
+    background-color: #deb3ff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #b14f8a;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #ad4fb2;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+
+  #gallery img {
+    max-width: 200px; /* Adjust the size (e.g., 200px wide) */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px auto; /* Add space around the images */
+    border-radius: 10px; /* Optional: Round the corners */
+  }
+  
+  footer {
+    background-color: #9570c3;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  #gif-player {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  #gif-container img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #b752f1;
+    border-radius: 10px;
+  }
+  
+  button {
+    background-color: #c170c0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #bca5fc;
+  }
+
+  #gif-player-xanthe, #gif-player-jack {
+    text-align: center; /* Centers all content inside the section */
+  }
+  
+  
